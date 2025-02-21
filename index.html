@@ -1,32 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My First GitHub Pages Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Outdoor School</title>
   <style>
-    /* Very basic styling for demonstration */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f0f0f0;
+    /* Reset some default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
+    body, html {
+      font-family: Arial, sans-serif;
       color: #333;
     }
-    p {
-      line-height: 1.5;
-    }
-    .container {
-      background: white;
+    /* Header and Navigation */
+    header {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
       padding: 20px;
-      border-radius: 8px;
+    }
+    nav {
+      background: #00695c;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('your-hero-image.jpg') no-repeat center center/cover;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+    .hero h1 {
+      color: white;
+      font-size: 48px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    /* Main Content */
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .content h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .content p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00695c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #00574b;
+    }
+    /* Footer */
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first GitHub Pages website. I’m learning how to create websites!</p>
-  </div>
+  <header>
+    <h2>American Outdoor School</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <!-- Replace 'your-hero-image.jpg' with the actual path or URL to your hero image -->
+    <h1>Explore the Outdoors</h1>
+  </section>
+
+  <section class="content">
+    <h2>Welcome to American Outdoor School</h2>
+    <p>
+      Discover our passion for outdoor education and adventure. Join us as we explore nature, learn about the environment, and create unforgettable experiences in the great outdoors.
+    </p>
+    <a href="programs.html" class="btn">Learn More</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 American Outdoor School. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
